@@ -1,0 +1,9 @@
+// $("body h2").remove();
+// $("body ul").remove();
+
+$(".container").empty();
+
+$("nav").after("<%= escape_javascript(render partial: "post", locals: { post: @post }) %>");
+// $(".post").after("<%= escape_javascript(render partial: "comments", locals: { post: @post }) %>")
+// $("nav").after("<h2> foo bar baz</h2>");
+// $("nav").after("<h2 class=\"example\">foo bar baz</h2>");

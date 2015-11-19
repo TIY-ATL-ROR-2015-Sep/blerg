@@ -35,6 +35,7 @@ class PostsController < ApplicationController
     respond_to do |format|
       format.html { render :show }
       format.json { render json: @post }
+      format.js { render :show }
       #format.json { render "show.json.jbuilder", status: :ok }
     end
   end
